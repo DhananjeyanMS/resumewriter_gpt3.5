@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0;">
+    <header style="background-color: #333; color: #fff; text-align: center; padding: 20px 0;">
+        <h1 style="margin: 0;">Resume writer</h1>
+    </header>
+    <main style="max-width: 600px; margin: 40px auto; background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <form method="POST" action="/api">
+            <div style="margin-bottom: 20px; text-align:center;">
+                <label for="companyRole" style="display: block; font-weight: bold; margin-bottom: 5px;">Company Role</label>
+                <input type="text" id="companyRole" name="companyRole" placeholder="Enter company role..." style="width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 16px;" required>
+            </div>
+            <div style="margin-bottom: 20px; text-align:center;">
+                <label for="companyName" style="display: block; font-weight: bold; margin-bottom: 5px;">Company Name</label>
+                <input type="text" id="companyName" name="companyName" placeholder="Enter company name..." style="width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 16px;" required>
+            </div>
+            <div style="margin-bottom: 20px; text-align:center;">
+                <label for="jobDescription" style="display: block; font-weight: bold; margin-bottom: 5px;">Job Description</label>
+                <input type="text" id="jobDescription" name="jobDescription" placeholder="Enter job description..." style="width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 16px;" required>
+            </div>
+            <div style="margin-bottom: 20px; text-align:center;">
+                <label for="resume" style="display: block; font-weight: bold; margin-bottom: 5px;">Your Resume</label>
+                <textarea id="resume" name="resume" placeholder="Paste your resume" style="width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 16px;" required></textarea>
+            </div>
+            <div style="margin-bottom: 20px; text-align:center;">
+                <label for="question1" style="display: block; font-weight: bold; margin-bottom: 5px;">Question 1 from Company</label>
+                <textarea id="question1" name="question1" placeholder="Enter question 1..." style="width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 16px;" ></textarea>
+            </div>
+            <div style="margin-bottom: 20px; text-align:center;">
+                <label for="question2" style="display: block; font-weight: bold; margin-bottom: 5px;">Question 2 from Company</label>
+                <textarea id="question2" name="question2" placeholder="Enter question 2..." style="width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 16px;" ></textarea>
+            </div>
+            <div style="margin-bottom: 20px; text-align:center;">
+                <label for="question3" style="display: block; font-weight: bold; margin-bottom: 5px;">Question 3 from Company</label>
+                <textarea id="question3" name="question3" placeholder="Enter question 3..." style="width: 95%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-size: 16px;" ></textarea>
+            </div>
+            <div style="margin-bottom: 20px; text-align:center;">
+                <input type="submit" value="Get Answers" style="background-color: #007BFF; color: #fff; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; ">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
