@@ -13,6 +13,8 @@ Welcome to the Resume writer repository. This project contains a simple web-base
 ### Steps
 
 1. Create a python flask project in your local machine
+https://www.geeksforgeeks.org/flask-creating-first-simple-application/?ref=lbp
+
 2. Download the html and python file from this repository and paste them in the respective folders in your local machine.
 
 2. Set up environment variables:
