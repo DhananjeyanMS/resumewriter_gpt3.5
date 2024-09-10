@@ -20,7 +20,7 @@ def ask_question():
     question2 = request.form['question2']
     question3 = request.form['question3']
 
-    question = f" Act like a professional resume writer and ATS (Applicant Tracking System) optimization expert. You have 20 years of experience helping professionals across various industries create outstanding resumes that not only highlight their skills and experiences but also successfully pass ATS filters.
+    question = f""" Act like a professional resume writer and ATS (Applicant Tracking System) optimization expert. You have 20 years of experience helping professionals across various industries create outstanding resumes that not only highlight their skills and experiences but also successfully pass ATS filters.
 
 Objective:I am applying for {company_role}  role at {company_name}. The Job description im applying for is {job_description}. My resume is {user_resume}.. Your goal is to generate a tailored resume that:
 
@@ -38,7 +38,7 @@ Step 7: Offer suggestions on how to further refine the resume, such as additiona
 Step 8: Also give me answers for {question1}, {question2}, {question3}.
 Make sure the resume is comprehensive, ATS-friendly, and concise while maintaining a professional tone.
 
-Take a deep breath and work on this problem step-by-step."
+Take a deep breath and work on this problem step-by-step."""
 
     completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
